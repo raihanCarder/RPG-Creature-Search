@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Creature Search App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>RPG Creature Search</h1>
+    <div class="main-section">
+        <div class="search-section">
+            <p>Search for <a href="https://rpg-creature-api.freecodecamp.rocks/" target="_blank">Creature</a> by Name or
+                ID:</p>
+            <input type="text" placeholder="Search Here!" id="search-input" required>
+            <button id="search-button" aria-label="search">Search</button>
+        </div>
+        <div class="description-section">
+            <div id="name-id-section">
+                <p id="creature-name"></p>
+                <p id="creature-id"></p>
+            </div>
+            <div id="height-weight-section">
+                <p id="weight"></p>
+                <p id="height"></p>
+            </div>
+            <div id="types">
+            </div>
+            <h4 id="attack-name"></h4>
+            <p id="attack-description"></p>
+        </div>
+        <div class="stats-section">
+            <div class="names-of-stats">
+                <p class="stat-name"><strong>Base</strong></p>
+                <p class="stat-name">HP:</p>
+                <p class="stat-name">Attack:</p>
+                <p class="stat-name">Defense:</p>
+                <p class="stat-name">SP. Attack:</p>
+                <p class="stat-name">SP. Defense:</p>
+                <p class="stat-name">Speed:</p>
+            </div>
+            <div class="numbers-of-stats">
+                <p class="stat"><strong>Stats</strong></p>
+                <p class="stat" id="hp"></p>
+                <p class="stat" id="attack"></p>
+                <p class="stat" id="defense"></p>
+                <p class="stat" id="special-attack"></p>
+                <p class="stat" id="special-defense"></p>
+                <p class="stat" id="speed"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
